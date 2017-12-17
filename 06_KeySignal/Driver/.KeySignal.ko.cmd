@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/6410_LinuxDriver/06_KeySignal/Driver/KeySignal.ko := arm-linux-ld -EL -r  -T /home/shuimu/more/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/shuimu/more/6410_LinuxDriver/06_KeySignal/Driver/KeySignal.ko /home/shuimu/more/6410_LinuxDriver/06_KeySignal/Driver/KeySignal.o /home/shuimu/more/6410_LinuxDriver/06_KeySignal/Driver/KeySignal.mod.o

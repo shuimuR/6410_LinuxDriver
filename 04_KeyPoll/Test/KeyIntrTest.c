@@ -18,7 +18,8 @@ int main(int argc, char *argv)
     unsigned char KeyVal = 0;
     while(1)
     {
-        ret = poll(pfd, 1, 2000);
+        ret = poll(pfd
+            , 1, 2000);
         if(ret == 0)
         {
             printf("Time out\n");
