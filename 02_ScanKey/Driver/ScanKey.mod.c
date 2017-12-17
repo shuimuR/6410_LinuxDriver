@@ -18,15 +18,14 @@ static const struct modversion_info ____versions[]
 __used
 __attribute__((section("__versions"))) = {
 	{ 0xd0a8ddc4, "module_layout" },
-	{ 0x17a142df, "__copy_from_user" },
-	{ 0xfa2a45e, "__memzero" },
+	{ 0x98082893, "__copy_to_user" },
 	{ 0x40a6f522, "__arm_ioremap" },
 	{ 0x779636b1, "device_create" },
 	{ 0x4c38cbec, "__class_create" },
 	{ 0x78713c2f, "__register_chrdev" },
+	{ 0x6bc3fbc0, "__unregister_chrdev" },
 	{ 0x8b6dfcfd, "class_destroy" },
 	{ 0x1b73a865, "device_destroy" },
-	{ 0x6bc3fbc0, "__unregister_chrdev" },
 	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
 	{ 0x27e1a049, "printk" },
 };
@@ -37,4 +36,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "F81BB16EBD061085300322F");
+MODULE_INFO(srcversion, "C56618E7B1FD45EF1ECFE92");

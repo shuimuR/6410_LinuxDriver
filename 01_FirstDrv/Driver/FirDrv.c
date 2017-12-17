@@ -91,7 +91,7 @@ static int FirDrvInit()
 static void FirDrvExit()
 {
     unregister_chrdev(major, "FirDev");
-    device_destroy(FirDrvClassDev, MKDEV(major, 0));
+    device_destroy(FirDrvClass, MKDEV(major, 0));
     class_destroy(FirDrvClass);
     printk("FirstDrv exit\n");
 }
