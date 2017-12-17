@@ -101,6 +101,7 @@ int KeyIntrRead(struct file *file, char __user *buf, size_t size, loff_t *ppos)
     return 0;
 }
 
+#if 0
 static unsigned int KeyIntrPoll(struct file *file, poll_table *wait)
 {
     unsigned int mask = 0;
@@ -112,6 +113,7 @@ static unsigned int KeyIntrPoll(struct file *file, poll_table *wait)
     }
     return mask;
 }
+#endif
 
 static int ButtonSync(int fd, struct file *filp, int on)
 {
@@ -124,7 +126,7 @@ static struct file_operations KeyIntrFiles =
     .owner = THIS_MODULE,
     .open = KeyIntrOpen,
     .read = KeyIntrRead,
-    .poll = KeyIntrPoll,
+    //.poll = KeyIntrPoll,
     .fasync = ButtonSync,
 };
 

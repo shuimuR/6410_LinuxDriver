@@ -39,8 +39,8 @@ __attribute__((section("__versions"))) = {
 	{ 0x8b6dfcfd, "class_destroy" },
 	{ 0x1b73a865, "device_destroy" },
 	{ 0x6bc3fbc0, "__unregister_chrdev" },
-	{ 0x27e1a049, "printk" },
 	{ 0x2e5810c6, "__aeabi_unwind_cpp_pr1" },
+	{ 0x27e1a049, "printk" },
 };
 
 static const char __module_depends[]
@@ -49,4 +49,4 @@ __attribute__((section(".modinfo"))) =
 "depends=";
 
 
-MODULE_INFO(srcversion, "9CC691F67A7CAD3A0753F0F");
+MODULE_INFO(srcversion, "98F9C4EC70793EBA1E872C1");
