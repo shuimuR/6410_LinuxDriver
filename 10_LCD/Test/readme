@@ -1,0 +1,12 @@
+测试方法
+1. 在linux源代码中make menuconfig
+    Device Drivers
+        Graphics support
+            S3C Framebuffer Support (eXtended)
+    取消内核中的驱动选择
+
+2. make
+
+3. 重新烧录内核
+
+    因取消lcd驱动后未能成功编译内核，此驱动只做复习，没有在板子上最终调试
