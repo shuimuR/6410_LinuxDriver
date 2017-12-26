@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/6410_LinuxDriver/13_RAMBlock/Driver/RAMBlock.ko := arm-linux-ld -EL -r  -T /home/shuimu/more/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/shuimu/more/6410_LinuxDriver/13_RAMBlock/Driver/RAMBlock.ko /home/shuimu/more/6410_LinuxDriver/13_RAMBlock/Driver/RAMBlock.o /home/shuimu/more/6410_LinuxDriver/13_RAMBlock/Driver/RAMBlock.mod.o
