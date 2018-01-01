@@ -1,0 +1,10 @@
+[Translation] 
+File=QtopiaSettings 
+Context=PWMTest 
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry] 
+Exec=PWMTest
+Icon=PWMTest
+Type=Application 
+Name[]=PWMTest
+CanFastload=0

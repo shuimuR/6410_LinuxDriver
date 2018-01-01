@@ -1,0 +1,17 @@
+#!/bin/sh
+echo "========================================="
+echo "=       mount to yaffs2 part .....       ="
+echo "========================================="
+mount -t yaffs2 /dev/mtdblock2 /mnt
+echo "========================================="
+echo "=         decompress file               ="
+echo "========================================="
+echo "need several minutes, please wait.....      "
+cd /mnt
+tar xzf /MY6410_yaffs2_v3.0.tar.gz
+echo "========================================="
+echo "=       Root FS has been updated.       ="
+echo "=       Reboot and Enjoy OK6410!        ="
+echo "========================================="
+rm  MY6410_yaffs2_v3.0.tar.gz
+echo "===============Success===================="

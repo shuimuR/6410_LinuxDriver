@@ -1,0 +1,10 @@
+[Translation] 
+File=QtopiaSettings 
+Context=KeyTest 
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry] 
+Exec=KeyTest
+Icon=KeyTest
+Type=Application 
+Name[]=KeyTest
+CanFastload=0

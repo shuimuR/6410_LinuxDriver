@@ -1,0 +1,26 @@
+#!/bin/sh
+base1=qpe
+pid=`/bin/pidof $base1`
+if [ -n "$pid" ]; then
+	killall $base1
+fi
+
+base2=qss
+pid=`/bin/pidof $base2`
+if [ -n "$pid" ]; then
+	killall $base2
+fi
+
+base3=quicklauncher
+pid=`/bin/pidof $base3`
+if [ -n "$pid" ]; then
+	killall  $base3
+fi
+
+
+base4=fluidlauncher
+pid=`/bin/pidof $base4`
+if [ -n "$pid" ]; then
+	killall  $base4
+fi
+/bin/qtopia_mouse &

@@ -1,0 +1,38 @@
+1. make menuconfig
+    去掉内核自带的nand驱动
+    Device Drivers
+        Memory Technology Device(MTD) support
+            NAND Device Support
+                NAND support for Samsung S3C
+
+2. make uImage
+
+3. 使用新内核启动，并且使用nfs文件系统启动
+    之前的参数为bootargs=root=/dev/mtdblock2 rootfstype=yaffs2 console=ttySAC0,115200
+    保存之前的启动参数
+    set bootargs console=ttySAC0,115200 root=/dev/nfs nfsroot=192.168.3.79:/home/shuimu/more/6410_LinuxDriver/FileSystem ip=192.168.3.77:192.168.3.79:192.168.3.1:255.255.255.0::eth0:off
+    save
+
+4. mount -o nolock,vers=2 192.168.3.79:/home/shuimu/more/6410_LinuxDriver /mnt
+   insmod *.ko
+
+/**************************************************************
+修改Linux内核文件drivers/mtd/nand/nand_base.c:3262
+case 218:
+			chip->ecc.layout = &nand_oob_128;
+			break;
+
+OK6410采用两个使能引脚控制flash
+static void MyNandSelect(struct mtd_info *mtd, int chipnr)
+{
+	if(chipnr == -1)
+    {
+        //取消选中
+        NandRegs->nfcont |= (1 << 1) | (1 << 2);
+    }
+    else
+    {
+        //选中
+        NandRegs->nfcont &= ~((1 << 1) | (1 << 2));
+    }
+}

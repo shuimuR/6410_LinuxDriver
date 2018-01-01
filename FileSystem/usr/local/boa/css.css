@@ -1,0 +1,56 @@
+.border {
+	border: 1px solid #99bcfa;
+}
+
+.Tfont {
+	font-family: "ËÎÌו";
+	font-size: 13px;
+	color: #213d95;
+	font-weight: bold;
+}
+.T1font {
+	font-family: "ËÎÌו";
+	font-size: 13px;
+	color: #213d95;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #22375b;
+}
+body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/bg01.gif);
+}
+a {
+	font-size: 12px;
+	color: #22375b;
+}
+a:link {
+	color: #22375b;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #22375b;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+	color: #22375b;
+}
+INPUT {
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #ff9900 1px solid; COLOR: #000000; BORDER-BOTTOM: #ff9900 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #f6f6f6
+}
+BUTTON {
+	FONT-SIZE: 9pt; HEIGHT: 20px
+}
+SELECT {
+	FONT-SIZE: 9pt; HEIGHT: 20px
+}
+
+

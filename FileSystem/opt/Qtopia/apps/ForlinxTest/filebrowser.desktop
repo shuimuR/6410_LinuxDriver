@@ -1,0 +1,10 @@
+[Translation]
+File=QtopiaSettings
+Context=FileBrowser
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry]
+Exec=filebrowser
+Icon=filebrowser
+Type=Application
+Name[]=文件浏览器
+CanFastload=0

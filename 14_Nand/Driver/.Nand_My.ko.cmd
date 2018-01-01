@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/6410_LinuxDriver/14_Nand/Driver/Nand_My.ko := arm-linux-ld -EL -r  -T /home/shuimu/more/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/shuimu/more/6410_LinuxDriver/14_Nand/Driver/Nand_My.ko /home/shuimu/more/6410_LinuxDriver/14_Nand/Driver/Nand_My.o /home/shuimu/more/6410_LinuxDriver/14_Nand/Driver/Nand_My.mod.o

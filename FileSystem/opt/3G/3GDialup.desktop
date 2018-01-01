@@ -1,0 +1,10 @@
+[Translation] 
+File=QtopiaSettings 
+Context=3GDialup 
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry] 
+Exec=3GDialup
+Icon=3GDialup
+Type=Application 
+Name[]=3GDialup
+CanFastload=0

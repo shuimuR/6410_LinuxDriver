@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# This is part 2 of the ppp-on script. It will perform the connection
+# protocol for the desired connection.
+#
+exec /mnt/disk/chat -v						\
+	TIMEOUT		3				\
+	ABORT 'NO CARRIER'	\
+	ABORT 'ERROR'				\
+	ABORT 'NO DIALTONE'	\
+	ABORT 'BUSY'				\
+	ABORT 'NO ANSWER'		\
+	'' AT								\
+	OK ATZ							\
+	OK AT+CGDCONT=1,\"IP\",\"3gnet\",,0,0		\
+	OK AT+CFUN=1		\
+	OK ATDT*99#	\
+	CONNECT ''	\

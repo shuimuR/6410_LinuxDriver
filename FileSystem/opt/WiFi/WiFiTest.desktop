@@ -1,0 +1,10 @@
+[Translation] 
+File=QtopiaSettings 
+Context=WiFiTest
+Comment[Desktop Entry/Name]=Use soft hyphen (char U00AD) to indicate hyphenation
+[Desktop Entry] 
+Exec=WiFiTest
+Icon=WiFiTest
+Type=Application 
+Name[]=WiFiTest
+CanFastload=0
