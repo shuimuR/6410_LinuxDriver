@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/6410_LinuxDriver/15_VirNet/driver/VirNet.ko := arm-linux-ld -EL -r  -T /home/shuimu/more/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/shuimu/more/6410_LinuxDriver/15_VirNet/driver/VirNet.ko /home/shuimu/more/6410_LinuxDriver/15_VirNet/driver/VirNet.o /home/shuimu/more/6410_LinuxDriver/15_VirNet/driver/VirNet.mod.o
