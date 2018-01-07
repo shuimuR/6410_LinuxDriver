@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/6410_LinuxDriver/17_IIC/driver/IIC_948.ko := arm-linux-ld -EL -r  -T /home/shuimu/more/linux-3.0.1/scripts/module-common.lds --build-id  -o /home/shuimu/more/6410_LinuxDriver/17_IIC/driver/IIC_948.ko /home/shuimu/more/6410_LinuxDriver/17_IIC/driver/IIC_948.o /home/shuimu/more/6410_LinuxDriver/17_IIC/driver/IIC_948.mod.o
