@@ -1,0 +1,106 @@
+/*******************************************
+6410内核自带声卡驱动
+测试
+*******************************************/
+1. ls /dev/dsp /dev/mixer
+
+2. 播放
+    寻找*.wav格式的文件，
+    cat *.wav > /dev/dsp
+
+    播放效果为杂音，不能正常播放
+
+由于 OK6410 的 Linux 内核虽然有了声卡的驱动， 但是并没有 ALSA 架构需要的应用程序接口库。在用户空间访问声卡的时候需要先经过 ALSA 库才到内核访问驱动程序，所以我们需要移植 ALSA 库。
+1. 到 http://www.alsa-project.org/main/index.php/Download 下载最新版本的 alsa库（alsa-lib-1.0.29.tar.bz2）和工具包（alsa-utils-1.0.29.tar.bz2） 。
+
+2. 解压
+
+3. 配置 alsa-lib
+./configure --host=arm-linux  --prefix=/usr/local/share/arm-alsa  --enable-shared --disable-python --with-configdir=/usr/local/share/alsa  --with-plugindir=/usr/local/lib/alsa_lib CC=arm-linux-gcc CXX=arm-linux-g++ LD=arm-linux-ld
+make
+make install
+
+4. 配置alsa-utils
+./configure --host=arm-linux --prefix=/usr/local/share/arm-alsa CFLAGS="-I/usr/local/share/arm-alsa/include" LDFLAGS="-L/usr/local/share/arm-alsa/lib-lasound" --disable-alsamixer --disable-xmlto --with-alsa-inc-prefix=/usr/local/share/arm-alsa/include --with-alsa-prefix=/usr/local/share/arm-alsa/lib CC=arm-linux-gcc CXX=arm-linux-g++ LD=arm-linux-ld
+make
+make install
+
+5. 移植文件到开发板系统
+    将/usr/local/share目录下的alsa，arm-alsa拷贝到nfs能挂载的目录中
+    5.1．将/usr/local/share目录下的alsa，arm-alsa拷贝到开发板的/usr/local/share目录下
+    cp ./alsa  /usr/local/share  -rfa
+    cp ./arm-alsa  /usr/local/share -rfa
+    注意：必须目录为./alsa 不能是./alsa/
+
+    5.2．将/usr/local/share/arm-alsa/lib目录下的文件拷贝到开发板根文件系统的/lib目录下
+    cp ./arm-alsa/lib/*  /lib –rfa
+
+    5.3．将arm-alsa/bin目录下的文件拷贝到/sbin目录下
+    cp ./arm-alsa/bin/*  /bin -rfa
+
+    5.4．将arm-alsa/sbin目录下的文件拷贝到/sbin目录下
+    cp ./arm-alsa/sbin/*  /bin -rfa
+
+    5.5．添加环境变量，编辑开发板的文件系统里的/etc/profile，切记是开发板的文件系统不是PC的文件系统啊！！！在结尾添加
+    export ALSA_CONFIG_PATH=/usr/local/share/alsa/alsa.conf
+
+6. aplay 1.wav
+即可正常播放音乐了
+
+/**********************************************************************
+移植madplayer
+**********************************************************************/
+1. 解压
+tar  xvzf libid3tag-0.15.1b.tar.gz
+tar  xvzf libmad-0.15.1b.tar.gz
+tar  xvzf zlib-1.1.4.tar.gz
+
+2. 移植zlib
+    2.1 ./configure  --shared --prefix=*/install
+    2.2 修改Makefile
+    CC=arm-linux-gcc
+
+    LDSHARED=arm-linux-gcc
+
+    CPP=arm-linux-gcc -E
+
+    AR=arm-linux-ar
+
+    RANLIB=arm-linux-ranlib
+
+    2.3 make
+        make install
+
+    2.4 cp */install/lib/* */rootfs/lib -rfa（开发板）
+
+3. 移植libid3tag
+    3.1 ./configure --host=arm-linux --prefix=${PWD}/install
+
+    3.2 Make
+        make install
+
+    3.3 cp install/lib/* /lib -rfa（开发板）
+
+4. 移植libmad
+    4.1 ./configure --host=arm-linux --prefix=${PWD}/install
+
+    4.2 修改Makefile
+        在Makefile的129行去掉-fforce-mem这个选项 去掉这几个字符
+
+    4.3 Make
+        make install
+
+    4.4 cp install/lib/* /lib -rfa (开发板)
+
+5. 移植madplay播放器
+    5.1 ./configure --host=arm-linux
+    5.2 make
+    5.3 在开发板上的此目录中执行命令
+        cp madplay /sbin
+
+6. 在开发板上运行madplay 2.mp3
+    即可正常播放音乐
+
+    按+、-操作音量
+
+    

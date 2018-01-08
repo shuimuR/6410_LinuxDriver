@@ -1,0 +1,76 @@
+ucs4.lo: ucs4.c config.h global.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stddef.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+  id3tag.h ucs4.h latin1.h utf16.h utf8.h
+
+config.h:
+
+global.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stddef.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+id3tag.h:
+
+ucs4.h:
+
+latin1.h:
+
+utf16.h:
+
+utf8.h:

@@ -1,0 +1,11 @@
+audio_null.o: audio_null.c config.h global.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/mad.h \
+  audio.h
+
+config.h:
+
+global.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/mad.h:
+
+audio.h:

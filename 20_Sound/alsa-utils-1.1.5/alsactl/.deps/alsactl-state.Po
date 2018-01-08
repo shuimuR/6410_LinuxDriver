@@ -1,0 +1,202 @@
+alsactl-state.o: state.c ../include/aconfig.h ../include/version.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/ctype.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stdarg.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stddef.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+  /usr/local/share/arm-alsa/include/alsa/asoundlib.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/poll.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/poll.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/poll.h \
+  /usr/local/share/arm-alsa/include/alsa/asoundef.h \
+  /usr/local/share/arm-alsa/include/alsa/version.h \
+  /usr/local/share/arm-alsa/include/alsa/global.h \
+  /usr/local/share/arm-alsa/include/alsa/input.h \
+  /usr/local/share/arm-alsa/include/alsa/output.h \
+  /usr/local/share/arm-alsa/include/alsa/error.h \
+  /usr/local/share/arm-alsa/include/alsa/conf.h \
+  /usr/local/share/arm-alsa/include/alsa/pcm.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h \
+  /usr/local/share/arm-alsa/include/alsa/rawmidi.h \
+  /usr/local/share/arm-alsa/include/alsa/timer.h \
+  /usr/local/share/arm-alsa/include/alsa/hwdep.h \
+  /usr/local/share/arm-alsa/include/alsa/control.h \
+  /usr/local/share/arm-alsa/include/alsa/mixer.h \
+  /usr/local/share/arm-alsa/include/alsa/seq_event.h \
+  /usr/local/share/arm-alsa/include/alsa/seq.h \
+  /usr/local/share/arm-alsa/include/alsa/seqmid.h \
+  /usr/local/share/arm-alsa/include/alsa/seq_midi_event.h alsactl.h
+
+../include/aconfig.h:
+
+../include/version.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/ctype.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stdarg.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stddef.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+/usr/local/share/arm-alsa/include/alsa/asoundlib.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/poll.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/poll.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/poll.h:
+
+/usr/local/share/arm-alsa/include/alsa/asoundef.h:
+
+/usr/local/share/arm-alsa/include/alsa/version.h:
+
+/usr/local/share/arm-alsa/include/alsa/global.h:
+
+/usr/local/share/arm-alsa/include/alsa/input.h:
+
+/usr/local/share/arm-alsa/include/alsa/output.h:
+
+/usr/local/share/arm-alsa/include/alsa/error.h:
+
+/usr/local/share/arm-alsa/include/alsa/conf.h:
+
+/usr/local/share/arm-alsa/include/alsa/pcm.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h:
+
+/usr/local/share/arm-alsa/include/alsa/rawmidi.h:
+
+/usr/local/share/arm-alsa/include/alsa/timer.h:
+
+/usr/local/share/arm-alsa/include/alsa/hwdep.h:
+
+/usr/local/share/arm-alsa/include/alsa/control.h:
+
+/usr/local/share/arm-alsa/include/alsa/mixer.h:
+
+/usr/local/share/arm-alsa/include/alsa/seq_event.h:
+
+/usr/local/share/arm-alsa/include/alsa/seq.h:
+
+/usr/local/share/arm-alsa/include/alsa/seqmid.h:
+
+/usr/local/share/arm-alsa/include/alsa/seq_midi_event.h:
+
+alsactl.h:

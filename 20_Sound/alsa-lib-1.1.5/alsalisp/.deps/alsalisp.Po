@@ -1,0 +1,199 @@
+alsalisp.o: alsalisp.c \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stddef.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stdarg.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/err.h \
+  ../include/asoundlib.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/poll.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/poll.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/poll.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h \
+  ../include/alsa/asoundef.h ../include/alsa/version.h \
+  ../include/alsa/global.h ../include/alsa/input.h \
+  ../include/alsa/output.h ../include/alsa/error.h ../include/alsa/conf.h \
+  ../include/alsa/pcm.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h \
+  /opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h \
+  ../include/alsa/rawmidi.h ../include/alsa/timer.h \
+  ../include/alsa/hwdep.h ../include/alsa/control.h \
+  ../include/alsa/mixer.h ../include/alsa/seq_event.h \
+  ../include/alsa/seq.h ../include/alsa/seqmid.h \
+  ../include/alsa/seq_midi_event.h ../include/alisp.h
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdio.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/features.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/predefs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/cdefs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wordsize.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/gnu/stubs.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stddef.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/types.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/typesizes.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/libio.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/_G_config.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/wchar.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include/stdarg.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio_lim.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sys_errlist.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/stdio.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdlib.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/types.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/time.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/endian.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/endian.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/select.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/select.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/sigset.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/time.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/sysmacros.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/pthreadtypes.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/alloca.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/string.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/string2.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/unistd.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/confname.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/getopt.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/err.h:
+
+../include/asoundlib.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/fcntl.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/fcntl.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/assert.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/poll.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/sys/poll.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/poll.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/linux/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/asm-generic/errno-base.h:
+
+../include/alsa/asoundef.h:
+
+../include/alsa/version.h:
+
+../include/alsa/global.h:
+
+../include/alsa/input.h:
+
+../include/alsa/output.h:
+
+../include/alsa/error.h:
+
+../include/alsa/conf.h:
+
+../include/alsa/pcm.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/stdint.h:
+
+/opt/arm-linux-gcc-4.3.2/bin/../arm-none-linux-gnueabi/libc/usr/include/bits/wchar.h:
+
+../include/alsa/rawmidi.h:
+
+../include/alsa/timer.h:
+
+../include/alsa/hwdep.h:
+
+../include/alsa/control.h:
+
+../include/alsa/mixer.h:
+
+../include/alsa/seq_event.h:
+
+../include/alsa/seq.h:
+
+../include/alsa/seqmid.h:
+
+../include/alsa/seq_midi_event.h:
+
+../include/alisp.h:

@@ -81,7 +81,7 @@ echo "Starting Qtopia2, please waiting..." > /dev/tty1
 echo "                                  "
 echo "Starting Qtopia2, please waiting..." 
 
-#/bin/qtopia &
+/bin/qtopia &
 ifconfig eth0 192.168.3.77 netmask 255.255.255.0
 mount -o nolock,vers=2 192.168.3.79:/home/shuimu/more/6410_LinuxDriver /mnt
 echo 8 > /proc/sys/kernel/printk
