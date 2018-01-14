@@ -1,0 +1,21 @@
+/********************************************
+注意：
+测试此demo需要修改内核文件
+arch/arm/mach-s3c64xx/clock.c
+增加
+Line257
+    {
+		.name		= "sdma0",
+		.id		= -1,
+		.parent		= &clk_h,
+		.enable		= s3c64xx_hclk_ctrl,
+		.ctrlbit	= S3C_CLKCON_HCLK_SDMA0,
+	}, {
+		.name		= "sdma1",
+		.id		= -1,
+		.parent		= &clk_h,
+		.enable		= s3c64xx_hclk_ctrl,
+		.ctrlbit	= S3C_CLKCON_HCLK_SDMA1,
+	},
+变异内核后重新烧录
+************************************************/

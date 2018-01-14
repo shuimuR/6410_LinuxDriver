@@ -1,0 +1,87 @@
+#! /bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:
+runlevel=S
+prevlevel=N
+umask 022
+export PATH runlevel prevlevel
+
+#
+#	Trap CTRL-C &c only in this shell so we can interrupt subprocesses.
+#
+trap ":" INT QUIT TSTP
+/bin/hostname FORLINX6410
+
+/bin/mount -n -t proc none /proc
+/bin/mount -n -t sysfs none /sys
+/bin/mount -n -t usbfs none /proc/bus/usb
+/bin/mount -t ramfs none /dev
+
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+/sbin/mdev -s
+/bin/hotplug
+# mounting file system specified in /etc/fstab
+mkdir -p /dev/pts
+mkdir -p /dev/shm
+/bin/mount -n -t devpts none /dev/pts -o mode=0622
+/bin/mount -n -t tmpfs tmpfs /dev/shm
+/bin/mount -n -t ramfs none /tmp
+/bin/mount -n -t ramfs none /var
+mkdir -p /var/empty
+mkdir -p /var/log
+mkdir -p /var/log/boa
+mkdir -p /var/lock
+mkdir -p /var/run
+mkdir -p /var/tmp
+
+/sbin/hwclock -s -f /dev/rtc
+
+syslogd
+
+#no run inetd server
+#/etc/rc.d/init.d/netd start
+
+/etc/rc.d/init.d/alsaconf start
+
+echo "                        " > /dev/tty1
+echo "Starting networking..." > /dev/tty1
+#sleep 1
+#/etc/rc.d/init.d/httpd start
+#echo "                        " > /dev/tty1
+#echo "Starting web server..." > /dev/tty1
+#sleep 1
+#/etc/rc.d/init.d/leds start
+#echo "                        " > /dev/tty1
+#echo "Starting leds service..." > /dev/tty1
+#echo "                        "
+#sleep 1
+
+#echo "*************************************" > /dev/tty1
+#echo "     http://www.witech.com.cn        " > /dev/tty1
+#echo "*************************************" > /dev/tty1
+#echo "*************************************" 
+#echo "     http://www.witech.com.cn        " 
+#echo "*************************************" 
+
+
+/sbin/ifconfig lo 127.0.0.1
+/etc/init.d/ifconfig-eth0
+
+#start ftp server user:root password:
+/sbin/vsftpd &
+
+#start telnetd server usr:root password:
+/sbin/telnetd 
+
+#start boa web service
+/sbin/boa
+
+
+echo "                                  " > /dev/tty1
+echo "Starting Qtopia2, please waiting..." > /dev/tty1
+echo "                                  "
+echo "Starting Qtopia2, please waiting..." 
+
+/bin/qtopia &
+ifconfig eth0 192.168.0.177 netmask 255.255.255.0
+mount -o nolock,vers=2 192.168.0.101:/home/shuimu/more/6410_LinuxDriver /mnt
+echo 8 > /proc/sys/kernel/printk
